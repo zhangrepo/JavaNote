@@ -26,4 +26,4 @@
 
 # 代码随想录
 
-[代码随想录](https://github.com/zhangrepo/JavaNote/blob/main/docs/java/interview.md#web%E9%97%AE%E9%A2%98)
+[代码随想录](https://github.com/zhangrepo/JavaNote/blob/main/docs/%E4%BB%A3%E7%A0%81%E9%9A%8F%E6%83%B3%E5%BD%95/%E4%BB%A3%E7%A0%81%E9%9A%8F%E6%83%B3%E5%BD%95.md)
