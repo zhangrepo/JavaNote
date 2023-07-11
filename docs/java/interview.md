@@ -706,7 +706,7 @@ new ThreadPoolExecutor(pool.getCorePoolSize(),
 
 #### 并发工具类？
 
-1. CountDownLatch，它是一种计数器的方式保证线程同步；它不去控制多个子线程之间的前后关系，只保证某一线程能够在这些子线程执行完成后再执行。
+* CountDownLatch 一个或者多个线程，等待其他多个线程完成某件事情之后才 能执行。它是一种计数器的方式保证线程同步；它不去控制多个子线程之间的前后关系，只保证某一线程能够在这些子线程执行完成后再执行。
 
 ```java
 CountDownLatch countDownLatch = new CountDownLatch(2);
@@ -714,7 +714,7 @@ countDownLatch.countDown();
 countDownLatch.await();
 ```
 
-2. CyclicBarrier，通过设置屏障的方式使得多线程同步，能够控制多个线程在屏障处等等其他线程也执行到屏障点，可以实现CountDownLatch具有的功能，但是比CountDownLatch功能强大；
+* CyclicBarrier多个线程互相等待，直到到达同一个同步点，再继续一起执行。可以实现CountDownLatch具有的功能，但是比CountDownLatch功能强大；
 
 ```java
 CyclicBarrier cyclicBarrier = new CyclicBarrier(7, () -> {
